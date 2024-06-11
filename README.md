@@ -18,13 +18,13 @@ loss: 0.0103 - f1_score: 0.5068 - accuracy: 0.9964 - precision: 0.9757 - recall:
 ## Model Predictions
 On our test data set, the model outputs these results for the first 15 purchases as a sample:
 
-![Predictions Table](images/model_predictions.png)
+<img src="images/model_predictions.png" width='20%'>
 
 On large datasets, it has the functionality to iterate through and return an array of numbers corresponding to fraudulent purchase numbers
 ```bash
 [15, 27, 65, 73, 96, 115, 121, 126, 134, 169, 198, 203...]
 ```
-*Note: 15 means the 15th purchase from the top, 27 is the 27th from the top, etc...*
+*Note: 15 means the 15th purchase from the top is fraudulent, 27 is the 27th from the top, etc...*
 
 ## Trying the Model
 Download FraudDetectionModel and add to your local directory. Then load the model using tensorflow
