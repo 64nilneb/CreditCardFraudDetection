@@ -5,11 +5,11 @@ This is a deep learning model designed to monitor credit card transaction histor
 ## Performance
 The model performs with an accuracy of **99.6%** over a test set of 200,000 purchases.
 
-**F1 Score:** 0.51
+**F1 Score:** 51%
 
-**Precision:** 0.98
+**Precision:** 98%
 
-**Recall:** 0.98
+**Recall:** 98%
 
 ```bash
 loss: 0.0103 - f1_score: 0.5068 - accuracy: 0.9964 - precision: 0.9757 - recall: 0.9830
