@@ -126,3 +126,27 @@ def createCFMatrix(y_test, y_preds):
             size=15)
 
 createCFMatrix(y_test, y_preds)
+
+predictions = tf.squeeze(tf.round(model.predict(x_test)))
+
+def predTable(predictions):
+  # Create a table to represent your results
+  table = pd.DataFrame(predictions)
+  table.replace({0.0: 'Legitimate', 1.0: 'Fraud'}, inplace=True)
+  table.columns = ['Status']
+  print(table)
+
+def findFraudPurchaseNumbers(predictions):
+  fraudulent_purchases = []
+
+  # Iterates through model predictions and isolates the indices where fraudulent purchases are made
+  # WARNING: Can be time consuming on large datasets
+  for i in range(len(predictions)):
+    if predictions[i] == 1.0:
+      fraudulent_purchases.append(i+1)
+
+  # The numbers in these array correspond to the purchase number in your purchase history, where 1 is the first purchase from the top, 2 is the second, etc
+  print(fraudulent_purchases)
+
+predTable(predictions)
+findFraudPurchaseNumbers(predictions)
