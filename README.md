@@ -18,7 +18,7 @@ loss: 0.0103 - f1_score: 0.5068 - accuracy: 0.9964 - precision: 0.9757 - recall:
 ## Model Predictions
 On our test data set, the model outputs these results for the first 15 purchases as a sample:
 
-![Predictions Table](model_predictions.png)
+![Predictions Table](images/model_predictions.png)
 
 On large datasets, it has the functionality to iterate through and return an array of numbers corresponding to fraudulent purchase numbers
 ```bash
@@ -76,7 +76,7 @@ print(fraudulent_purchases)
 
 ## Confusion Matrix
 
-![Confusion Matrix](confusion_matrix_ccfraud.png)
+![Confusion Matrix](images/confusion_matrix_ccfraud.png)
 
 ## License
 
