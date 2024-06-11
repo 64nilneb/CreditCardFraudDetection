@@ -26,7 +26,7 @@ On large datasets, it has the functionality to iterate through and return an arr
 ```
 *Note: 15 means the 15th purchase from the top, 27 is the 27th from the top, etc...*
 
-## Trying the model
+## Trying the Model
 Download FraudDetectionModel and add to your local directory. Then load the model using tensorflow
 
 ```python
